@@ -6,7 +6,7 @@ public class MyArray<E> {
     private int size;
 
     MyArray(int startValue) {
-        this.elements = new Object[startValue];
+        this.elements = (T[])new Object[startValue];
 
     }
     public boolean addAll(MyArray<E> list) {
